@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FoodOrderingProject" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#85C9FF</item>
+    </style>
+
+    <style name="Theme.FoodOrderingProject" parent="Base.Theme.FoodOrderingProject" />
+</resources>

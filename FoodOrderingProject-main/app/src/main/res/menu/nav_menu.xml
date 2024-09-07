@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/dessert"
+            android:icon="@drawable/baseline_cake_24"
+            android:title="Desserts" />
+        <item
+            android:id="@+id/food"
+            android:icon="@drawable/dish_ic"
+            android:title="Foods" />
+        <item
+            android:id="@+id/drink"
+            android:icon="@drawable/baseline_local_cafe_24"
+            android:title="Drinks" />
+        <item
+            android:id="@+id/combo"
+            android:icon="@drawable/baseline_fastfood_24"
+            android:title="Combo" />
+    </group>
+</menu>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".View.Menu_Activity"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="225dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize" />
+                </com.google.android.material.appbar.AppBarLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.navigation.NavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:headerLayout="@layout/header_nav"
+                app:menu="@menu/nav_menu">
+
+            </com.google.android.material.navigation.NavigationView>
+        </androidx.drawerlayout.widget.DrawerLayout>
+        <Button
+            android:id="@+id/btnCart"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/baseline_shopping_cart_24"
+            android:text="Đặt hàng" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
+

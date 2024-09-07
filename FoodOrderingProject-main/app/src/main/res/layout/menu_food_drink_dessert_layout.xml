@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="225dp">
+
+    <ImageView
+        android:id="@+id/imgMenu"
+        android:layout_width="128dp"
+        android:layout_height="128dp" />
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="Tên Món"
+            android:textColor="#0AA8EF"
+            android:textStyle="bold"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="Giá"
+            android:textSize="24dp" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnImgMinus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#0AA8EF"
+                android:src="@drawable/minus"
+                android:text="Button" />
+
+            <TextView
+                android:id="@+id/tvNums"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:text="0" />
+
+            <ImageButton
+                android:id="@+id/btnImgPlus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#0AA8EF"
+                android:src="@drawable/plus"
+                android:text="-"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
